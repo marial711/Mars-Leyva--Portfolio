@@ -1,28 +1,31 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
+import { Link } from "react-router-dom";
 
+export function NavLink({to, children, ...props}) {
+  return (
+    <li className="text-xl ">
+      <Link className="text-black no-underline" to={to} {...props}>
+        { children }
+      </Link>
+    </li>
+  );
+}
 
 export default function Navbar() {
   return (
-    <nav className="px-4 py-8 flex items-center justify-between">
+    <nav
+      className="navbar p-4 flex items-center justify-between">
       <div>
-        <a href="/">Home</a>
+        <a className="text-black no-underline text-xl"  href="/">
+          Home
+        </a>
       </div>
-      <ul className="inline-flex items-center gap-8 px-8 mb-0">
-        <li>
-          <a href="/#about-section">About</a>
-        </li>
-        <li>
-          <a href="/#contact-section">Contact</a>
-        </li>
-        <li>
-          <a href="/">Blog</a>
-        </li>
-        <li>
-          <button className="px-2 py-1.5 border rounded">
-            Login
-          </button>
-        </li>
+      <ul className="navbar-nav inline-flex flex-row items-center gap-8 pl-8 mb-0">
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/blog">Blog</NavLink>
+        <NavLink to="/login">Login</NavLink>
       </ul>
     </nav>
   );
