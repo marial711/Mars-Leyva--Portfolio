@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 export function NavLink({to, children, ...props}) {
   return (
-    <li className="text-xl ">
-      <Link className="text-black no-underline" to={to} {...props}>
+    <li className="nav-item">
+      <Link className="nav-link" to={to} {...props}>
         { children }
       </Link>
     </li>
@@ -15,17 +15,17 @@ export function NavLink({to, children, ...props}) {
 export default function Navbar() {
   return (
     <nav
-      className="navbar p-4 flex items-center justify-between">
-      <div>
-        <a className="text-black no-underline text-xl"  href="/">
+      className="p-4 navbar nav ">
+      <div className="nav-brand">
+        <a className="fs-3 text-decoration-none"  href="/">
           Home
         </a>
       </div>
-      <ul className="navbar-nav inline-flex flex-row items-center gap-8 pl-8 mb-0">
+      <ul className="nav nav-underline">
         <NavLink to="/about">About</NavLink>
         <NavLink to="/contact">Contact</NavLink>
         <NavLink to="/blog">Blog</NavLink>
-        <NavLink to="/login">Login</NavLink>
+        <NavLink to="/login" className="btn btn-primary">Login</NavLink>
       </ul>
     </nav>
   );

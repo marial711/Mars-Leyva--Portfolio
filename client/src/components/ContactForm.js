@@ -1,6 +1,6 @@
 export default function ContactForm() {
     return (
-      <form className="row w-75">
+      <form className="row">
         <div className="mb-3 col-6">
           <label for="visitor-name" className="form-label">
             Name

@@ -2,8 +2,8 @@ import ContactForm from '../components/ContactForm';
 
 export default function ContactSection() {
     return (
-      <div className="min-h-screen">
-        <div >
+      <div className="min-vh-100 d-flex flex-column justify-content-around">
+        <div>
           <h2>Contact</h2>
           <p>
             Want to know more information? <br />

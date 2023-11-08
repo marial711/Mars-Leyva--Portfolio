@@ -1,10 +1,9 @@
 import React from "react";
 
-import SkillCircle from "../components/SkillCircle";
 
 export default function AboutSection() {
     return (
-      <div className="min-h-screen">
+      <div className="min-vh-100 d-flex flex-column justify-content-center">
         <div>
           <h2>Who Am I?</h2>
           <p>
@@ -13,6 +12,10 @@ export default function AboutSection() {
             aliquip pariatur proident consectetur ea consequat. Do ea ex
             voluptate excepteur adipisicing.
           </p>
+        </div>
+        <div>
+           {/* Enter Skills Animation */}
+        </div>
         </div>
     );
 }
