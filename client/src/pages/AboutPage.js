@@ -37,6 +37,35 @@ export default function AboutSection() {
                 opportunity to turn ideas into reality.
               </p>
             </div>
+
+            <div className="col container">
+              <div className="row">
+                <img
+                  className="col"
+                  src="../images/example-me.jpg"
+                  height="200"
+                  width="auto"
+                  alt="Web Designer: Maria"
+                />
+                <img
+                  className="col"
+                  src="../images/example-a.jpg"
+                  height="200"
+                  width="auto"
+                  alt="Random doodle"
+                />
+              </div>
+              <div className="row">
+                <img
+                  className="col"
+                  src="../images/example-a.jpg"
+                  height="200"
+                  width="auto"
+                  alt="Painting of her inner mind"
+                />
+              </div>
+            </div>
+          </div>
         </div>
     );
 }
