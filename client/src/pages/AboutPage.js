@@ -1,20 +1,10 @@
 import React from "react";
 
-
 export default function AboutSection() {
     return (
-      <div className="min-vh-100 d-flex flex-column justify-content-center">
-        <div>
-          <h2>Who Am I?</h2>
-          <p>
-            Culpa elit reprehenderit ad ut ad in laboris. Excepteur ipsum ad
-            veniam duis culpa laborum. Sit enim aliqua et nostrud excepteur sunt
-            aliquip pariatur proident consectetur ea consequat. Do ea ex
-            voluptate excepteur adipisicing.
-          </p>
-        </div>
-        <div>
-           {/* Enter Skills Animation */}
+      <div className="about-layout">
+        <div className="about-header d-flex justify-content-center align-items-center">
+          <h1>About Me</h1>
         </div>
         <div className="container about-section ">
           <div className="row ">
@@ -67,5 +57,8 @@ export default function AboutSection() {
             </div>
           </div>
         </div>
+
+        {/* <div>Enter Skills Animation</div> */}
+      </div>
     );
 }

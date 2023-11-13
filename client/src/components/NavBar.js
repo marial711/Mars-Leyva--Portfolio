@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export function NavLink({to, children, ...props}) {
   return (
     <li className="nav-item">
-      <Link className="nav-link" to={to} {...props}>
+      <Link className="nav-link fs-5" to={to} {...props}>
         { children }
       </Link>
     </li>
@@ -15,9 +15,9 @@ export function NavLink({to, children, ...props}) {
 export default function Navbar() {
   return (
     <nav
-      className="p-4 navbar nav ">
+      className="py-3 px-4 navbar">
       <div className="nav-brand">
-        <a className="fs-3 text-decoration-none"  href="/">
+        <a className="nav-link fs-1"  href="/">
           Home
         </a>
       </div>
@@ -25,7 +25,7 @@ export default function Navbar() {
         <NavLink to="/about">About</NavLink>
         <NavLink to="/contact">Contact</NavLink>
         <NavLink to="/blog">Blog</NavLink>
-        <NavLink to="/login" className="btn btn-primary">Login</NavLink>
+        {/* <NavLink to="/login" className="fs-5 btn btn-primary">Login</NavLink> */}
       </ul>
     </nav>
   );
