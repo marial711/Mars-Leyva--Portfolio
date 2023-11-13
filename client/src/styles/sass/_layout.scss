@@ -1,3 +1,24 @@
+.contact-layout {
+    padding: 6rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 4rem;
+    align-items: center;
+}
+.contact-bg {
+    width: 100%;
+}
+
+
 .about-header {
     height: 40vh;
 }
