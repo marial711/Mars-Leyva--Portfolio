@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from './components/NavBar';
 import "bootstrap/dist/css/bootstrap.css";
+import "./assets/styles/css/main.css";
 
 import LandingPage from './pages/LandingPage';
 import AboutSection from './pages/AboutPage';
@@ -14,7 +15,7 @@ const App = () => {
     return (
       <>
         <NavBar />
-        <div className="container">
+        <div>
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/about" element={<AboutSection />} />

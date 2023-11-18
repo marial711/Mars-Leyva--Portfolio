@@ -1,0 +1,16 @@
+.about-header {
+    background: {
+        image: url('../../images/example-c.jpg');
+        size: cover;
+        repeat: no-repeat;
+        position: fixed;
+    }
+
+    h1 {
+        font-size: 7rem;
+        font-weight:500;
+        color: white;
+        text-shadow: 2px 5px 10px black;
+        padding-top: 3rem;
+    }
+}

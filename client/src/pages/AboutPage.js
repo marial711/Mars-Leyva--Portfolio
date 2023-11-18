@@ -1,4 +1,6 @@
 import React from "react";
+import ProfilePicture from "../assets/images/example-me.jpg";
+
 
 export default function AboutSection() {
     return (
@@ -6,9 +8,9 @@ export default function AboutSection() {
         <div className="about-header d-flex justify-content-center align-items-center">
           <h1>About Me</h1>
         </div>
-        <div className="container about-section ">
+        <div className="about-section">
           <div className="row ">
-            <div className="col d-flex  flex-column justify-content-center">
+            <div className="col-6 d-flex flex-column justify-content-center">
               <h2>My Journey</h2>
               <p>
                 As a Web Design major at the University of Hartford, my journey
@@ -28,37 +30,17 @@ export default function AboutSection() {
               </p>
             </div>
 
-            <div className="col container">
-              <div className="row">
-                <img
-                  className="col"
-                  src="../images/example-me.jpg"
-                  height="200"
-                  width="auto"
-                  alt="Web Designer: Maria"
-                />
-                <img
-                  className="col"
-                  src="../images/example-a.jpg"
-                  height="200"
-                  width="auto"
-                  alt="Random doodle"
-                />
-              </div>
-              <div className="row">
-                <img
-                  className="col"
-                  src="../images/example-a.jpg"
-                  height="200"
-                  width="auto"
-                  alt="Painting of her inner mind"
-                />
-              </div>
+                <div className="col-6 gallery-layout">
+                  <img
+                    src={ProfilePicture}
+                    height="100%"
+                    width="auto"
+                    alt="Web Designer: Maria"
+                  />
+                </div>
             </div>
           </div>
         </div>
-
-        {/* <div>Enter Skills Animation</div> */}
-      </div>
+        // {/* <div>Enter Skills Animation</div> */}
     );
 }
