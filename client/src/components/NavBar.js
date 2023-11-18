@@ -15,9 +15,9 @@ export function NavLink({to, children, ...props}) {
 export default function Navbar() {
   return (
     <nav
-      className="py-3 px-4 navbar">
+      className="py-1 px-4 navbar">
       <div className="nav-brand">
-        <a className="nav-link fs-1"  href="/">
+        <a className="nav-link fs-2"  href="/">
           Home
         </a>
       </div>
