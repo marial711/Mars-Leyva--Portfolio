@@ -1,3 +1,17 @@
+#root {
+    font: {
+        family: $body-font;
+        size: 16px;
+        weight: 300;
+    }
+}
+h1, h2, h3, h4 {
+    font: {
+            size: 3rem;
+            family: $header-font;
+        }
+}
+
 .navbar {
     background-color: rgba(255,255,255, 0.75);
     border-bottom: 6px solid white;
