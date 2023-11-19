@@ -8,6 +8,7 @@ import AboutSection from './pages/AboutPage';
 import ContactSection from './pages/ContactPage';
 import BlogSection from "./pages/BlogPage";
 import LoginSection from "./pages/Login"
+import Footer from "./components/Footer";
 
 import {Route, Routes} from 'react-router-dom';
 
@@ -24,6 +25,7 @@ const App = () => {
             <Route path="/login" element={<LoginSection />} />
           </Routes>
         </div>
+        <Footer />
       </>
     );
 };

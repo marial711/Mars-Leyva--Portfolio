@@ -41,3 +41,13 @@ h1, h2, h3, h4 {
         padding-top: 3rem;
     }
 }
+.footer-layout {
+    color: white;
+    background-color: $secondary-color;
+    a {
+        color: white;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+ }

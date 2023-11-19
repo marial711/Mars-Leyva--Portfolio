@@ -26,3 +26,17 @@
         box-shadow: 1px 1px 2rem black;
     }
 }
+
+.footer-layout {
+    padding: 0 8rem;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+}
+
+.social-media-space {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
