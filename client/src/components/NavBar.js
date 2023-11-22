@@ -15,7 +15,8 @@ export function NavLink({to, children, ...props}) {
 export default function Navbar() {
   return (
     <nav
-      className="py-1 px-4 navbar">
+      className="navbar navbar-expand-lg">
+        <div className="container-fluid">
       <div className="nav-brand">
         <a className="nav-link fs-2"  href="/">
           Home
@@ -24,9 +25,11 @@ export default function Navbar() {
       <ul className="nav nav-underline">
         <NavLink to="/about">About</NavLink>
         <NavLink to="/contact">Contact</NavLink>
-        <NavLink to="/blog">Blog</NavLink>
+        {/* <NavLink to="/blog">Blog</NavLink> */}
         {/* <NavLink to="/login" className="fs-5 btn btn-primary">Login</NavLink> */}
       </ul>
+
+        </div>
     </nav>
   );
 }

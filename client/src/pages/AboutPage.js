@@ -1,16 +1,16 @@
 import React from "react";
 import ProfilePicture from "../assets/images/example-me.jpg";
-
+import SkillsSection from "../components/Skills";
 
 export default function AboutSection() {
     return (
-      <div className="about-layout">
+      <div className="about-layout row">
         <div className="about-header d-flex justify-content-center align-items-center">
           <h1>About Me</h1>
         </div>
         <div className="about-section">
           <div className="row ">
-            <div className="col-6 d-flex flex-column justify-content-center">
+            <div className="col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center">
               <h2>My Journey</h2>
               <p>
                 As a Web Design major at the University of Hartford, my journey
@@ -30,17 +30,21 @@ export default function AboutSection() {
               </p>
             </div>
 
-                <div className="col-6 gallery-layout">
-                  <img
-                    src={ProfilePicture}
-                    height="100%"
-                    width="auto"
-                    alt="Web Designer: Maria"
-                  />
-                </div>
+            <div className="col-lg-6 col-md-6 col-sm-12 gallery-layout">
+              <img
+                src={ProfilePicture}
+                height="100%"
+                width="auto"
+                alt="Web Designer: Maria"
+              />
             </div>
           </div>
         </div>
-        // {/* <div>Enter Skills Animation</div> */}
+
+          <div className="skills-layout">
+              <SkillsSection />
+            </div>
+      
+      </div>
     );
 }

@@ -5,9 +5,9 @@ import CopyRight from "../assets/svg/copyright";
 
 export default function Footer () {
     return (
-      <div className="footer-layout row">
+      <div className="footer-layout container-fluid row">
         <div className="fs-5 col-lg-6 col-md-6 col-sm-12 footer-section d-flex align-items-center justify-content-center gap-2">
-          Copyright <CopyRight /> 2023 Mars Leyva
+         <p>Copyright <CopyRight /> 2023 Mars Leyva</p> 
         </div>
         <div className=" col-lg-6 col-md-6 col-sm-12 social-media-space">
           <a href="https://github.com/marial711">
