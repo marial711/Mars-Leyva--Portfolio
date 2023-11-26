@@ -36,11 +36,21 @@ h1, h2, h3, h4 {
     h1 {
         font-size: 7rem;
         font-weight:500;
+.skills {
+    background: {
+        image: url("../../svg/endless-constellation.svg");
+    }
+}
+
         color: white;
         text-shadow: 2px 5px 10px black;
         padding-top: 3rem;
+        size: cover;
     }
+    box-shadow:  1px 1px 0.75rem darkgray;
+    height: 100%;
 }
+
 .footer-layout {
     color: white;
     background-color: $secondary-color;
