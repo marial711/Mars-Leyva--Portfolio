@@ -1,17 +1,17 @@
-export default function SkillsSection(){
+export default function SkillsCard({children, ...props}){
     return (
         <>
-            <div className="card">  {/* flip-card */}
-                <div className="card-content">   {/* flip-card-inner */}
+            <div className="card"> 
+                <div className="card-content">   
                     <div className="card-front"> 
-                        <p>
-                            Front
-                        </p>
+                        <h1>
+                            {props.title}
+                        </h1>
                     </div>
                     <div className="card-back">
-                        <p>
-                            Back
-                        </p>
+                        <div>
+                        { children }
+                        </div>
                     </div>
                 </div>
             </div>
