@@ -1,6 +1,14 @@
 .navbar {
     z-index: 2;
     position: absolute;
+.landing-layout {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
     width: 100%;
 }
 .about-header {

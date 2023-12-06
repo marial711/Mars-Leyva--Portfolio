@@ -1,0 +1,28 @@
+@keyframes fade-in-out {
+    from {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes vertical-movement {
+    from {
+        top: -100%;
+    }
+    to {
+        bottom: 100%;
+    }
+}
+
+@mixin bubble-animation($duration, $delay) {
+    animation: 
+        vertical-movement $duration linear,
+        fade-in-out $duration $delay infinite;
+}

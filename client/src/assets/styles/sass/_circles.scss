@@ -1,0 +1,56 @@
+.animated-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.circle {
+    position: absolute;
+    background-color: rgb(139, 219, 242);
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+
+    &:nth-child(even) {
+        background-color: rgb(189, 119, 242);
+        height: 100px;
+        width: 100px;
+    }
+}
+
+.circle1 {
+    top: 35%;
+    left: 68%;
+    @include bubble-animation(1.5s, 3s);
+}
+
+.circle2 {
+    top: 15%;
+    left: 90%;
+    @include bubble-animation(2.5s, 2.5s);
+}
+
+.circle3 {
+    top: 5%;
+    right: 80%;
+    @include bubble-animation(1.5s,
+        3s);
+}
+
+.circle4 {
+    top: 39%;
+    right: 93%;
+    @include bubble-animation(2.5s,2.5s);
+}
+
+.circle5 {
+    top: 85%;
+    left: 20%;
+    scale: 3;
+    @include bubble-animation(1.5s, 3s);
+}
+.circle6 {
+    top: 75%;
+    right: 10%;
+    @include bubble-animation(2.5s, 2.5s);
+}
