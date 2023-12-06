@@ -26,30 +26,27 @@ h1, h2, h3, h4 {
 }
 
 .about-header {
+    
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 72%, rgba(189,219,242,1) 95%, rgba(158,202,236,1) 100%);
     background: {
-        image: url('../../images/example-c.jpg');
         size: cover;
         repeat: no-repeat;
         position: fixed;
     }
 
     h1 {
-        font-size: 7rem;
-        font-weight:500;
-.skills {
-    background: {
-        image: url("../../svg/endless-constellation.svg");
+        font-size: 6rem;
+        font-weight: 400;
+        color: $primary-color;
+        text-shadow: 2px 2px 12px darkgrey; 
     }
 }
 
-        color: white;
-        text-shadow: 2px 5px 10px black;
-        padding-top: 3rem;
-        size: cover;
-    }
-    box-shadow:  1px 1px 0.75rem darkgray;
-    height: 100%;
+.about-section {
+    background-color: white;
 }
+
 
 .footer-layout {
     color: white;
