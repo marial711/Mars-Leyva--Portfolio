@@ -14,6 +14,7 @@ export default function LandingPage() {
             <div>            
                 <p>Part-time Coffee Enthsuiast aspiring to be a Full-Time Web Developer</p>
             </div>             */}
+        <div className="landing-layout" id="home" >
             <div className="animated-bg">
                 <div className="circle circle1"></div>
                 <div className="circle circle2"></div>

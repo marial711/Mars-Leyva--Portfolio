@@ -5,6 +5,7 @@ export default function ContactSection() {
       <div className="contact-layout">
           <div className="contact-card">
             <div>
+      <div className="contact-layout" id="contact">
             <h2>Get In Touch</h2>
               <p>Interested in Collaborating?</p> 
               <p>Have any Questions, Comments, Inputs?</p>

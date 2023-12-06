@@ -5,6 +5,7 @@ import SkillsSection from "../components/Skills";
 export default function AboutSection() {
     return (
       <div className="about-layout row">
+      <div className="about-layout row" id="about">
         <div className="about-header d-flex justify-content-center align-items-center">
           <h1>About Me</h1>
         </div>

@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 export function NavLink({to, children, ...props}) {
   return (
     <li className="nav-item">
-      <Link className="nav-link fs-5" to={to} {...props}>
+      <a className="nav-link fs-5" {...props}>
         { children }
-      </Link>
+      </a>
     </li>
   );
 }
@@ -17,18 +17,13 @@ export default function Navbar() {
     <nav
       className="navbar navbar-expand-lg">
         <div className="container-fluid">
-      <div className="nav-brand">
-        <a className="nav-link fs-2"  href="/">
-          Home
-        </a>
+      <div className="nav-brand nav">
+          <NavLink className="nav-link fs-2"  href="#home" smooth>Home</NavLink>
       </div>
-      <ul className="nav nav-underline">
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
-        {/* <NavLink to="/blog">Blog</NavLink> */}
-        {/* <NavLink to="/login" className="fs-5 btn btn-primary">Login</NavLink> */}
-      </ul>
-
+        <ul className="nav nav-underline">
+        <NavLink href="#about" smooth>About</NavLink>
+        <NavLink href="#contact" smooth>Contact</NavLink>
+        </ul>
         </div>
     </nav>
   );
