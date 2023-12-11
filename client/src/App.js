@@ -14,7 +14,7 @@ const App = () => {
     return (
       <>
         <NavBar />
-        <div className="container-fluid">
+        <div>
             <Routes>
               <Route path="/#home"  element={<LandingPage/>}/>
               <Route path="/#about" element={<AboutSection />} />
