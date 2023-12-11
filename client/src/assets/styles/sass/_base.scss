@@ -1,13 +1,25 @@
 #root {
+    overflow: hidden;
     font: {
         family: $body-font;
         size: 16px;
         weight: 300;
     }
+
+    background: {
+            image: url('../../svg/spectrum-gradient.svg');
+            size: cover;
+            repeat: no-repeat;
+            attachment: scroll;
+        }
 }
 h1, h2, h3, h4 {
+    margin: 0;
+    padding-bottom: 1rem;
+    color: $chinese-violet;
+    text-shadow: 2px 2px 12px $slate-gray;
     font: {
-            size: 3rem;
+            size: 2rem;
             family: $header-font;
         }
 }
