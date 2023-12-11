@@ -9,9 +9,9 @@ export default function SkillsCard({children, ...props}){
                         </h1>
                     </div>
                     <div className="card-back">
-                        <div>
+                        <ul>
                         { children }
-                        </div>
+                        </ul>
                     </div>
                 </div>
             </div>

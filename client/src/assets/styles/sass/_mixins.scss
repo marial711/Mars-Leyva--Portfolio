@@ -1,14 +1,24 @@
 @keyframes fade-in-out {
     from {
-        opacity: 1;
+        opacity: 0.45;
     }
 
     50% {
-        opacity: 0.2;
+        opacity: 0.15;
     }
 
     to {
-        opacity: 1;
+        opacity: 0.55;
+    }
+}
+
+@keyframes expand-percent {
+    from {
+        width: 0%;
+    }
+
+    to {
+        transform: translateX(0%);
     }
 }
 
@@ -24,5 +34,21 @@
 @mixin bubble-animation($duration, $delay) {
     animation: 
         vertical-movement $duration linear,
-        fade-in-out $duration $delay infinite;
+        fade-in-out $duration infinite;
+}
+
+@mixin gradient-bg {
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 72%, rgba(189, 219, 242, 1) 95%, rgba(158, 202, 236, 1) 100%);
+    background: {
+        size: cover;
+        repeat: no-repeat;
+        position: fixed;
+    }
+}
+
+@mixin center-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
 }
