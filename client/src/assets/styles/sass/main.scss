@@ -1,7 +1,22 @@
-@import 'variables';
-@import 'mixins';
-@import 'layout';
-@import 'base';
+@import 'base/reset';
 
-@import 'circles';
-@import 'skills';
+@import 'utilities/variables';
+@import 'utilities/mixins';
+
+@import 'base/base';
+
+@import 'layouts/footer';
+@import 'layouts/layout';
+
+@import 'components/navbar';
+@import 'components/skills';
+@import 'components/circles';
+@import 'components/contactForm';
+@import 'components/footer';
+
+
+@import 'pages/landing';
+@import 'pages/about';
+@import 'pages/contact';
+
+

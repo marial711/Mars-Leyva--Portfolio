@@ -1,0 +1,20 @@
+.navbar {
+    width: 20%;
+    position: fixed;
+    z-index: 4;
+    background-color: $dark-purple;
+    border-bottom: 6px solid $chinese-violet;
+}
+
+.nav-link {
+    font-family: $body-font;
+
+    color: white;
+
+    &:hover,
+    &:active,
+    &:focus {
+        font-weight: 500;
+        color: white;
+    }
+}

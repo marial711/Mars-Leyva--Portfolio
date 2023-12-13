@@ -1,0 +1,19 @@
+.landing-layout {
+    position: relative;
+    height: 100vh;
+    @include center-layout;
+
+    .landing-header {
+        z-index: 1;
+    }
+}
+
+.about-layout {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.contact-layout {
+    height: 100vh;
+    @include center-layout;
+}
