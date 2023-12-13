@@ -29,15 +29,60 @@
 
     
 }
+.mobile-navigation {
+    max-width: 100vw;
+    max-height: 50px;
+    height: 100%;
+    width: 100%;
+    background-color: $dark-purple;
+
+    svg {
+        position: fixed;
+        right: 0;
+        scale: 3;
+        z-index: 3;
+        margin: {
+            top: 3rem;
+            bottom:2rem;
+            right: 3rem;
+        }
+        background-color: rgba(255, 255, 255, 0.35);
+        border-radius: 32px;
+        color: $chinese-violet;
+        @media (min-width: 575.98px) {
+            display: none;
+        }
+    }
+    
+    ul {
+        display: flex;
+        justify-content: space-around;
+        color: white;
+    }
+    @media (min-width: 768px)  {
+        display: none;
+    }
+
+    
+}
 
 .nav-link {
-    font-family: $body-font;
-
-    color: white;
-
+    height: 100%;
+    width: 100%;
+    color: $dark-purple;
+    @include center-layout;
+    font: {
+        family: $body-font;
+        weight: 400;
+    }
+    animation: {
+        name: fade-in;
+        duration: 5.5s;
+    }
     &:hover,
     &:active,
     &:focus {
+        background-color: $dark-purple;
         font-weight: 500;
         color: white;
     }

@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import { Link } from "react-router-dom";
+import MenuIcon from '../assets/svg/menu-icon';
 
 export function NavLink({to, children, ...props}) {
   return (
@@ -23,5 +23,14 @@ export default function Navbar() {
           </ul>
       </nav>
 
+      <nav className='mobile-navigation'>
+        <p><MenuIcon /></p>
+        <ul>          
+            <NavLink href="#home" smooth>Home</NavLink>
+            <NavLink href="#about" smooth>About</NavLink>
+            <NavLink href="#contact" smooth>Contact</NavLink>
+          </ul>
+      </nav>
+    </>
   );
 }
