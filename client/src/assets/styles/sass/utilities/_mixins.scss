@@ -50,6 +50,16 @@
 
 }
 
+@keyframes slide-down {
+    from {
+        height: 0%;
+    }
+
+    to {
+       height: 100%;
+    }
+}
+
 @mixin bubble-animation($duration, $delay) {
     animation: 
         vertical-movement $duration linear,
