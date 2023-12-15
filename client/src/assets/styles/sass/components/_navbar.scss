@@ -23,11 +23,11 @@
             width: 100%;
         }
     }
-    @media (max-width: 768px) {
+    @media (max-width: $tablet--breakpoint) {
         animation: slide-out 1.5s linear;
     }
 
-    @media (max-width: 575.98px) {
+    @media (max-width: $mobile--breakpoint) {
         display: none;
     }
 
@@ -51,7 +51,7 @@
     border-radius: 100%;
     color: $chinese-violet;
     cursor: pointer;
-    @media  (min-width: 575.98px) {
+    @media  (min-width: $mobile--breakpoint) {
         display: none;
     }
 }
