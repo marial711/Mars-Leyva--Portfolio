@@ -1,34 +1,14 @@
-.about-header {
-    padding: {
-        top: 3rem;
-        bottom: 1rem;
-        left: 0;
-        right: 0;
-    }
-}
-
-.about-section-layout {
-    padding: 3rem;
-
-    .about-section-border {
-        border-left: 5px solid $primary-color;
-    }
-}
-
-.gallery-layout {
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-
-    img {
-        border: 4px solid $chinese-violet;
-        box-shadow: 1px 1px 2rem black;
-    }
-}
-
 .about-layout {
-    padding-bottom: 4rem;
+    h1 {
+        font-size: 3rem;
+    }
+    padding: {
+        right: 2rem;
+        left: 2rem;
+        top: 5rem;
+        bottom: 5rem;
+    }
+
     background-color: white;
     color: black;
 
@@ -37,17 +17,52 @@
 
         h1 {
             text-align: center;
-            font-size: 4rem;
             font-weight: 400;
+        }
+        
+        padding: {
+            top: 3rem;
+            bottom: 1rem;
+            left: 0;
+            right: 0;
         }
     }
 }
 
-.about-text {
+// .about-section-layout {
+//     padding: {
+//         top: 4rem;
+//         left: 2rem;
+//         right: 2rem;
+//         bottom: 4rem;
+//     }
+// }
 
+.gallery-layout {
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 350px;
+        border: 4px solid $chinese-violet;
+        box-shadow: 1px 1px 2rem black;
+    }
+
+    @media (max-width: $mobile--breakpoint) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.about-text {
+    height: 450px;
     p {
         font-size: 1.05rem;
-
+        padding-top: .5rem;
+        padding-bottom: .5srem;
+        word-break: keep-all;
         text: {
             align: justify;
             indent: 32px;
