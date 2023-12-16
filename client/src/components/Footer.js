@@ -1,6 +1,4 @@
-import GitHubLogo from "../assets/svg/github";
-import InstagramLogo from "../assets/svg/instagram";
-import LinkdinLogo from "../assets/svg/linkedin";
+import {GitHubLogo,IgLogo,LinkdinLogo} from "../assets/svg/logo-icons";
 import CopyRight from "../assets/svg/copyright";
 
 export default function Footer () {
@@ -17,7 +15,7 @@ export default function Footer () {
             <LinkdinLogo />
           </a>
           <a href="https://www.instagram.com/marsolaz_/">
-            <InstagramLogo />
+            <IgLogo />
           </a>
         </div>
       </div>
