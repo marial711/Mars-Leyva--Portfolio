@@ -1,19 +1,22 @@
 export default function ContactForm() {
     return (
-      <form className="row">
-        <div className="mb-3 col-6">
-          <label for="visitor-name" className="form-label">
-            Name
-          </label>
-          <input type="text" name="visitor-name" className="form-control" />
+      <form>
+        <div className="d-flex justify-content-between flex-wrap gap-4">
+          <div className="form-control">
+            <label for="visitor-name" className="form-label">
+              Name
+            </label>
+            <input type="text" name="visitor-name" className="form-control" placeholder="Jamie Appleseed"/>
+          </div>
+          <div className="form-control">
+            <label for="visitor-email" className="form-label">
+              Email
+            </label>
+            <input type="text" name="visitor-email" className="form-control" placeholder="email@email.com" />
+          </div>
         </div>
-        <div className="mb-3 col-6">
-          <label for="visitor-email" className="form-label">
-            Email
-          </label>
-          <input type="text" name="visitor-email" className="form-control" />
-        </div>
-        <div className="mb-3">
+        
+        <div className="form-control">
           <label for="visitor-msg" className="form-label">
             Message
           </label>
@@ -25,11 +28,9 @@ export default function ContactForm() {
             rows="4"
           ></textarea>
         </div>
-        <div className="text-center">
-          <button type="submit" className="btn btn-primary" name="submit">
-            Submit
-          </button>
-        </div>
+        <button type="submit"  name="submit">
+          Submit
+        </button>
       </form>
     );
 } 

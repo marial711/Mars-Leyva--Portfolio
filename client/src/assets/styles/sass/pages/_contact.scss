@@ -7,3 +7,88 @@
     }
 
 }
+.contact-card {
+    position: relative;
+    z-index: 2;
+    max-height: 650px;
+    max-width: 575px;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5%;
+    background-color: rgba($slate-gray, 0.75);
+
+    h2 {
+        color: white;
+        font-size: 3rem;
+
+        @media screen and (max-width: 576px) {
+            text-align: center;
+            font-size: 2.5rem;
+        }
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+
+    form {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        label {
+            font-size: 1.5rem;
+            font-family: $header-font;
+        }
+        button {
+            padding: 0.5rem;
+            margin: 1rem;
+            width: 300px;
+            background-color: $cadet-gray;
+            border-radius: 10px;
+            border-bottom: 4px solid darken($slate-gray, 30%);
+            color: white;
+            font: {
+                size: 1.25rem;
+                weight: 300;
+            }
+
+            &:hover, &:active, &:focus {
+                background-color: darken($slate-gray, 30%);
+                border: none;
+            }
+            @media (max-width: $mobile--breakpoint) {
+                width: 150px;
+            }
+        }
+        .form-control {
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            color: white;
+            input, textarea {
+                color: black;
+                background-color: white;
+                border: 2px solid $slate-gray;
+                font-weight: 300;
+            
+            }
+            ::placeholder {
+                color: $slate-gray;
+            }
+        }
+        @media (max-width: $mobile--breakpoint) {
+            width: 90%;
+        }
+    }
+    @include center-layout;
+    @media (max-width: $mobile--breakpoint) {
+        width: 355px;
+    }
+}
+
+.contact-header {
+    height: 20%;
+    @include center-layout;
+}
