@@ -1,10 +1,10 @@
 import { HtmlLogo, CssLogo, JsLogo, ReactjsLogo,
-     SassLogo, IllustratorLogo, LightroomLogo, 
-     PhotoshopLogo, BootstrapLogo} from "../assets/svg/logo-icons";
+     SassLogo, IllustratorLogo, LightroomLogo,
+    BootstrapLogo} from "../assets/svg/logo-icons";
 
 export default function MobileSkillSection() {
     return (
-        <ul className="icons">
+        <ul className="mobile-icons">
             <li>
                 <HtmlLogo />
             </li>
@@ -28,9 +28,6 @@ export default function MobileSkillSection() {
             </li>
             <li>
                 <LightroomLogo />
-            </li>
-            <li>
-                <PhotoshopLogo />
             </li>
         </ul>
     );

@@ -83,7 +83,7 @@
     margin: 1rem;
     height: 20px;
     width: 25vw;
-
+    display: flex;
     .bar {
         background-color: transparent;
         width: 100%;
@@ -116,7 +116,22 @@
         display: none;
     }
 }
+
 .icons {
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    svg {
+        scale: 1.5;
+        padding: 0rem;
+    }
+    p {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: $eggplant;
+    }
+}
+
+.mobile-icons {
     color: black;
     display: flex;
     flex-direction: row;
