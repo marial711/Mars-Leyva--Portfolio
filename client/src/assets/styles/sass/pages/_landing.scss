@@ -1,18 +1,38 @@
 .landing-layout {
-    color: white;
 
-    h1 {
-        color: white;
-        font-size: 6rem;
+img {
+        animation: rotate 6s ease-in-out infinite;
+        transform-style: preserve-3d;
+        perspective: 10000px;
     }
+}
+.landing-phrase {
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    gap: 2rem;
 
     h2 {
-        color: white;
-        font-size: 4rem;
+        padding: 1.5rem 0;
+        margin: 1rem;
+        font-size: 7.5rem;
     }
+    .greeting {
+        font-size: 1.5rem;
+    }
+    .intro {
+        font-size: 3rem;
+    }
+}
 
-    p {
-        color: $chinese-violet;
-        font-size: 2rem;
-    }
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: transparent;   
+    margin: 0 auto;
+    border-right: 0.05em solid $dark-purple;
+    animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
 }

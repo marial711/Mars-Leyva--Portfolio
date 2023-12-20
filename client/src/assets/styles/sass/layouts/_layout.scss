@@ -1,11 +1,11 @@
 .landing-layout {
     position: relative;
-    height: 100vh;
-    @include center-layout;
-
-    .landing-header {
-        z-index: 1;
-    }
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .about-layout {

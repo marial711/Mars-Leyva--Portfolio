@@ -65,7 +65,21 @@
         vertical-movement $duration linear,
         fade-in-out $duration infinite;
 }
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
 
+    50% {
+        transform: rotateY(180deg);
+    }
+
+    to {
+
+        transform: rotateY(0deg);
+
+    }
+}
 @mixin gradient-bg {
     background: radial-gradient(circle, rgba(255, 255, 255, 1) 72%, rgba(189, 219, 242, 1) 95%, rgba(158, 202, 236, 1) 100%);
     background: {
@@ -82,6 +96,19 @@
     align-items: center
 }
 
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
 @mixin fadein-content($duration, $delay) {
     animation: {
         name: fade-in;
