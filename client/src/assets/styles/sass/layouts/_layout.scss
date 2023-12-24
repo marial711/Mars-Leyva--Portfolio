@@ -4,16 +4,23 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
+
+    @media (max-width: $bp-lg) {
+        height: 70vh;
+    }
+    
 }
 
 .about-layout {
     position: relative;
-    padding: 2rem 0;
+    z-index: 2;
 }
 
 .contact-layout {
     height: 100vh;
     @include center-layout;
+}
+
+.container {
+    padding: 0;
 }

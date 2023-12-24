@@ -12,7 +12,7 @@ import {Route, Routes} from 'react-router-dom';
 
 const App = () => {
     return (
-      <>
+      <div className='container'>
         <NavBar />
         <div>
             <Routes>
@@ -25,7 +25,7 @@ const App = () => {
           <ContactSection/>
         </div>
         <Footer />
-      </>
+      </div>
     );
 };
 

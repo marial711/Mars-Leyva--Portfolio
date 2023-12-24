@@ -1,17 +1,21 @@
 import React from "react";
-import MarsLogo from "../assets/images/logo.png";
-// import { MouseMovingCircles } from "../components/AnimatedBackground";
+import HiMe from '../assets/images/hi.png';
 
 export default function LandingPage() {
     return (
-        <div className="landing-layout" id="home" >
-            <div className="landing-phrase">
-                <p className="greeting">Hi there!</p>
-                <span>I am</span>
-                <h2 className="typing">Mars Leyva !</h2>
-                <p className="intro"> I like making quality handcraft beverages, and <strong>responsive web apps</strong>!</p>
-            </div>                    
-            <img src={MarsLogo} width="auto" height="500px" alt="Mars Logo" />
+        <div className="landing-layout row" id="home">
+            <div className="col-lg-6 col-md-12 col-sm-12 align-self-center">
+                <div className="landing-phrase col-6">
+                    <p className="greeting">Hi there! I am</p>
+                    <div>
+                        <h2 className="typing">MARS LEYVA</h2>
+                    </div>
+                    <p className="intro"> I like making quality handcraft beverages, and <strong>responsive web apps</strong>!</p>
+                </div>
+            </div>
+            <div className="col-md-6 col-sm-12 align-self-center anime-me">
+                <img src={HiMe} alt="Bitmoji of Mars" height="auto" width="auto" />
+            </div>
         </div>
     );
 }

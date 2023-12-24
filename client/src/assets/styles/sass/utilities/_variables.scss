@@ -1,5 +1,7 @@
 $header-font:  'Prata', serif;
 $body-font : 'Fira Sans',sans-serif;
+$title-font: 'Grandstander',
+cursive;
 
 $primary-color: #9ecaec;
 $secondary-color: #7A8D9C;
@@ -12,3 +14,10 @@ $cadet-gray: #77a0a9;
 
 $tablet--breakpoint: 768px;
 $mobile--breakpoint: 575.98px;
+
+$bp-xs: 375px;
+$bp-sm: 575px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+$bp-xxl: 1400px;
