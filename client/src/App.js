@@ -12,9 +12,9 @@ import {Route, Routes} from 'react-router-dom';
 
 const App = () => {
     return (
-      <div className='container'>
+      <div >
         <NavBar />
-        <div>
+        <div className='container-fluid'>
             <Routes>
               <Route path="/#home"  element={<LandingPage/>}/>
               <Route path="/#about" element={<AboutSection />} />

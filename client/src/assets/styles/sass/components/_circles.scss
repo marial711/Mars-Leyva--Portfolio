@@ -1,21 +1,20 @@
 .animated-circles {
-    overflow: hidden;
     position: absolute;
-    z-index: 1;
+    overflow: hidden;
+    z-index: 0;
     height: 100%;
-    width: 100%;
 }
  
 .circle {
     position: absolute;
     z-index: 0;
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid $slate-gray;
     border-radius: 100%;
 
     &:nth-child(even) {
         background-color: transparent;
-        border: 2px solid white;
+        border: 2px solid $dark-purple;
     }
     &:nth-child(1) {
         height: 150px;

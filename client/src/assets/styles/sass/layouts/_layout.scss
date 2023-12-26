@@ -4,7 +4,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
+    overflow: hidden;
+    
     @media (max-width: $bp-lg) {
         height: 70vh;
     }
@@ -23,8 +24,8 @@
 }
 
 .contact-layout {
-    height: 100vh;
-    @include center-layout;
+    min-height: 100vh;
+    z-index:  2;
 }
 
 .container {

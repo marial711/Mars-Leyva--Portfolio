@@ -1,4 +1,4 @@
-export default function AnimatedBackground() {
+export function FadingCircles() {
     return (
         <div className="animated-circles">
             <div className="circle"></div>
@@ -10,3 +10,4 @@ export default function AnimatedBackground() {
         </div>
     )
 }
+
