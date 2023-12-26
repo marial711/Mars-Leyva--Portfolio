@@ -61,3 +61,19 @@
     }
 }
 
+.ball-container {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+
+.ball {
+    max-width: 150px;
+    max-height: 150px;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    background-color: black;
+    position: absolute;
+    margin: 1rem;
+}

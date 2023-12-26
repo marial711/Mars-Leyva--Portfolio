@@ -1,7 +1,7 @@
 import {
-    HtmlLogo, CssLogo, JsLogo, ReactjsLogo,
-    SassLogo, IllustratorLogo, LightroomLogo, BootstrapLogo
-} from "../assets/svg/logo-icons";
+    HtmlLogo, CssLogo, JsLogo, 
+    ReactjsLogo, SassLogo, IllustratorLogo, 
+    LightroomLogo, BootstrapLogo } from "../assets/svg/logo-icons";
 
 function countPercent(percent, start, end, duration) {
     let startTimestamp = null;
@@ -18,7 +18,7 @@ function countPercent(percent, start, end, duration) {
 
 function SkillsBar({ children, ...props }) {
     return (
-        <div className="d-flex justify-content-around gap-2 align-items-center icons">  
+        <div className="d-flex align-items-center justify-content-around  gap-2 icons">  
             {props.skill}
             <div className="skillbar-layout">
                 <div className="bar"></div>
@@ -44,7 +44,7 @@ window.onload = () => {
 
 export default function SkillsDataBar() {
     return (
-        <div className="skills-bar row justify-content-around flex-wrap m-3">
+        <div className="skills-bar row justify-content-around flex-wrap">
             <div className="col d-flex flex-wrap justify-content-around align-items-center">
                 <SkillsBar skill={ <HtmlLogo /> } skillPercent="98" />
                 <SkillsBar skill={<JsLogo />} skillPercent="95" />

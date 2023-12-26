@@ -1,4 +1,3 @@
-import React from "react";
 import ProfilePicture from "../assets/images/example-me.jpg";
 import SkillsDataBar from "../components/SkillsDataBar";
 import MobileSkillSection from "../components/MobileSkillSection";
@@ -6,10 +5,10 @@ import MobileSkillSection from "../components/MobileSkillSection";
 export default function AboutSection() {
     return (
       <div id="about" className="about-layout" >
-        <h1 className="row justify-content-center">About Me</h1>
-        <div className="about-section-layout">
+        <h1>About Me</h1>
+        <div className="about-section-layout row">
           <div className="row">
-            <div className="about-text col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center gap-4">
+            <div className="about-text col-lg-6 col-md-12 col-sm-12  d-flex flex-column justify-content-center gap-4">
             <h2>My Journey</h2>
             <p>
                 As a Web Design major at the University of Hartford, my journey
@@ -29,7 +28,7 @@ export default function AboutSection() {
               </p>
             </div>
 
-            <div className="col-lg-6 col-md-6 col-sm-12 gallery-layout">
+            <div className="col-lg-6 col-md-12 col-sm-12 gallery-layout ">
               <img
                 src={ProfilePicture}
                 height="100%"
@@ -40,9 +39,12 @@ export default function AboutSection() {
           </div>
         </div>
 
-        <h2 className="row justify-content-center m-4" align="center">Check out my skills!</h2>
-        <SkillsDataBar/>
-        <MobileSkillSection/>
+        <h2 className="text-center p-0">Check out my skills!</h2>
+        <div className="row d-flex flex-column justify-content-around align-items-center gap-3"> 
+          <SkillsDataBar />
+          <MobileSkillSection />
+        </div>
+       
       </div>
   );
 }

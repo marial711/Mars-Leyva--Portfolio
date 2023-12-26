@@ -14,6 +14,12 @@
 .about-layout {
     position: relative;
     z-index: 2;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;
 }
 
 .contact-layout {

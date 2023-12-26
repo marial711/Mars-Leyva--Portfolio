@@ -80,10 +80,9 @@
 
 .skillbar-layout {
     position: relative;
-    margin: 1rem;
     height: 20px;
-    width: 25vw;
-    display: flex;
+    width: 275px;
+    margin: 0 0.5rem;
     .bar {
         background-color: transparent;
         width: 100%;
@@ -119,14 +118,13 @@
 
 .icons {
     margin-bottom: 2rem;
-    margin-right: 1rem;
     svg {
         scale: 1.5;
         padding: 0rem;
     }
     p {
         font-size: 1.05rem;
-        font-weight: 600;
+        font-weight: 400;
         color: $eggplant;
     }
 }
