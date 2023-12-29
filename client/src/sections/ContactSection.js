@@ -1,4 +1,4 @@
-import ContactForm from '../components/ContactForm'; 
+import ContactForm from '../components/ContactForm.js'; 
 import GeoAlt from '../assets/svg/geo-alt.js';
 import Questions from '../assets/images/any-questions.png';
 

@@ -32,6 +32,7 @@
     }
 
     form {
+        height: 450px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -42,22 +43,32 @@
         }
         button {
             padding: 0.5rem;
-            margin: 1rem;
             width: 300px;
-            background-color: $dark-purple;
+            background-color: $slate-gray;
             border-radius: 10px;
-            border-bottom: 4px solid darken($dark-purple, 30%);
+            border: {
+                left: none;
+                right: none;
+                top: none;
+                bottom: 4px solid darken($slate-gray, 30%);
+            }
             color: white;
             letter-spacing: 5px;
             text-transform: uppercase;
+            margin-top: 2rem;
             font: {
                 size: 1.25rem;
                 weight: 600;
             }
 
             &:hover, &:active, &:focus {
-                background-color: darken($slate-gray, 30%);
                 border: none;
+                border: {
+                    left: none;
+                    right: none;
+                    top: none;
+                    bottom: 2px solid transparent;
+                }
             }
             @media (max-width: $mobile--breakpoint) {
                 width: 150px;

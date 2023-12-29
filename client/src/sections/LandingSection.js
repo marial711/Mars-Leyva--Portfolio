@@ -1,9 +1,9 @@
 import React from "react";
 import HiMe from '../assets/images/hi.png';
 
-export default function LandingPage() {
+export default function LandingSection() {
     return (
-        <div className="landing-layout row" id="home">
+        <div className="landing-layout row" id="homepage">
             <div className="col-lg-6 col-md-12 col-sm-12 align-self-center">
                 <div className="landing-phrase col-6">
                     <p className="greeting">Hi there! I am</p>
