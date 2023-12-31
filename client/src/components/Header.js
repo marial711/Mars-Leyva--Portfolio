@@ -3,8 +3,6 @@ import {useState} from 'react';
 import {NavHashLink} from "react-router-hash-link";
 
 export default function Navbar() {
-  const navLinks = document.querySelectorAll(`a`);
-  const navContainer = document.getElementById(`nav-container`);
   const [showNav, setShowNav] = useState(false);
   const closeNav = () => setShowNav(false);
   
@@ -15,9 +13,9 @@ export default function Navbar() {
   return (
     <header>
       <nav className='navigation'>
-        <div className='menu-icon'>
-            <button type="button" onClick={toggleNavItems}>
-              <MenuIcon  />
+        <div>
+          <button className='menu-icon' type="button" onClick={toggleNavItems}>
+            <MenuIcon  />
           </button>
         </div>
         
