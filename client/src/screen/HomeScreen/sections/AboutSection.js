@@ -1,6 +1,6 @@
-import ProfilePicture from "../assets/images/example-me.jpg";
-import SkillsDataBar from "../components/SkillsDataBar";
-import MobileSkillSection from "../components/MobileSkillSection";
+import ProfilePicture from "../../../assets/images/example-me.jpg";
+import SkillsDataBar from "../../../components/SkillsDataBar";
+import MobileSkillSection from "../../../components/MobileSkillSection";
 
 export default function AboutSection() {
     return (
@@ -11,12 +11,11 @@ export default function AboutSection() {
             <div className="about-text col-lg-6 col-md-12 col-sm-12  d-flex flex-column justify-content-center gap-4">
             <h2>My Journey</h2>
             <p>
-                As a Web Design major at the University of Hartford, my journey
-                blends passion and curiosity. Despite being at the entry level,
-                I've immersed myself in the dynamic world of web development.
-                Collaborating on projects with friends and diving into impactful
-                internships have enriched my understanding. Beyond the
-                classroom, self-taught projects have further honed my skills.
+                As a Web Design major at the University of Hartford, I've been to immerse
+                myself into the dynamic world of web development, by 
+                collaborating on projects with friends aswell as diving into impactful
+                internships. All my expirences have enriched my understanding and have me 
+                eduatie myself beyond the classroom.
               </p>
               <p>
                 Eager to contribute my evolving expertise, I stand on the cusp

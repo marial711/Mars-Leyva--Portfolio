@@ -1,24 +1,12 @@
 .anime-me{
     position: relative;
-    z-index: 2;
     display: flex;
-    height: 650px;
-    transform: translate(0px, 90px);
-    @media (max-width: $bp-lg) {
-        height: 550px;
-        transform: translate(4rem, -8rem);
-    }
-        @media (width: 992px) {
-            height: 500px;
-            transform: translate(2rem, 8rem);
-        }
-    @media (max-width: $bp-md) {
-        transform: translate(10px, -150px);
-
-    }
+    justify-content: center;
+    img {
     @media (max-width: $bp-sm) {
-        transform: translate(10px, -50px);
-        height: 500px;
-        margin: auto;
+        height: 300px;
+        width: 300px;
+    }
+
     }
 }

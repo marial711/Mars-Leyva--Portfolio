@@ -5,11 +5,6 @@
     flex-direction: row;
     justify-content: space-around;
     overflow: hidden;
-    
-    @media (max-width: $bp-lg) {
-        height: 70vh;
-    }
-    
 }
 
 .about-layout {

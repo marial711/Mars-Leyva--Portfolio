@@ -1,8 +1,8 @@
-import ContactForm from '../components/ContactForm.js'; 
-import GeoAlt from '../assets/svg/geo-alt.js';
-import Questions from '../assets/images/any-questions.png';
+import ContactForm from '../../../components/ContactForm.js'; 
+import GeoAlt from '../../../assets/svg/geo-alt.js';
+import Questions from '../../../assets/images/any-questions.png';
 
-import {FadingCircles} from '../components/AnimatedBackground.js';
+import {FadingCircles} from '../../../components/AnimatedBackground.js';
 
 export default function ContactSection() {
     return (
