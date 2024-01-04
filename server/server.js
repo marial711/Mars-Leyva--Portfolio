@@ -3,12 +3,12 @@ const app = express();
 const cors = require(`cors`);
 require(`dotenv`).config({ path: `./config.env`});
 
-const port = process.env.PORT || 8000;
-const router = express.Router();
+const sendMail = require('./routes/contactRoute');
+
+const port = process.env.PORT || 8080;
 
 app.use(cors());
 app.use(express.json());
-app.use("/", router);
 
 // DATABASE CONNECTION
 const dbo = require(`./database/conn`);
@@ -19,20 +19,10 @@ app.listen(port, () => {
     console.log(`Server is running on port: ${port}!`);
 });
 
-// EMAIL CONNECTION
-const nodemailer = require("nodemailer");
-const contactEmail = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-        user: process.env.EMAIL,
-        pass: process.env.PASSWORD,
-    },
+app.post('/contact', (req,res) => {
+    sendMail(req,res)
+});
+app.get('/', (req, res) => {
+    res.send(req.body);
 });
 
-contactEmail.verify((error) => {
-    if (error) {
-        console.log(error)
-    } else {
-        console.log("Ready to Send");
-    }
-});
