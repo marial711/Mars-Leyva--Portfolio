@@ -25,7 +25,7 @@ export default function ContactForm() {
         body: JSON.stringify({ emailInfo }),
       });
 
-      if(e) {
+      if(!response.ok) {
         setSubmitStatus(`Message Failed`);
         console.error(e);
       } else {
