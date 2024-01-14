@@ -3,12 +3,14 @@ const app = express();
 const cors = require(`cors`);
 require(`dotenv`).config({ path: `./config.env`});
 
-const sendMail = require('./routes/contactRoute');
 
 const port = process.env.PORT || 8080;
 
 app.use(cors());
 app.use(express.json());
+
+const contactRoutes = require('./routes/contactRoute');
+app.use('/', contactRoutes);
 
 // DATABASE CONNECTION
 const dbo = require(`./database/conn`);
@@ -17,12 +19,5 @@ app.listen(port, () => {
         if(err) console.error(err);
     });
     console.log(`Server is running on port: ${port}!`);
-});
-
-app.post('/contact', (req,res) => {
-    sendMail(req,res)
-});
-app.get('/', (req, res) => {
-    res.send(req.body);
 });
 

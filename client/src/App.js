@@ -13,9 +13,7 @@ const App = () => {
         <Header />
         <main className='container-fluid'>
             <Routes>
-              <Route path="/" exact="true" element={<HomeScreen />}/>
-              <Route path="/#about" element={< HomeScreen /> } />
-              <Route path="/#contact" element={<HomeScreen />}/>
+              <Route path="/"  element={<HomeScreen />}/>
             </Routes>
         </main>
         <Footer />
